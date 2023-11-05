@@ -61,14 +61,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void onTapShowToastBtn() {
     OverlayToastMessage.show(
-      context,
       textMessage: 'Toast Message',
     );
   }
 
   void onTapDismissAllAndShowToastBtn() {
     OverlayToastMessage.show(
-      context,
       dismissAll: true,
       textMessage: 'Dismiss All And Show Toast Message',
     );
@@ -76,7 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void onTapCustomBtn() {
     OverlayToastMessage.show(
-      context,
       widget: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Container(

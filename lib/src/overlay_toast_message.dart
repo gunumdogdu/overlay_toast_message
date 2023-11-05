@@ -16,7 +16,7 @@ class OverlayToastMessage extends StatefulWidget {
   final TextStyle? textStyle;
 
   OverlayToastMessage.show(
-    BuildContext context, {
+    {
     super.key,
     this.widget,
     this.textMessage,
@@ -32,7 +32,7 @@ class OverlayToastMessage extends StatefulWidget {
     assert(duration > animDuration);
 
     final over = OverlayEntry(builder: (BuildContext overlayContext) => this);
-    Overlay.of(context)!.insert(over);
+    
 
     final manager = Manager(duration, over);
     if (dismissAll) OverlayToastManager().dismissAll();
